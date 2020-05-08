@@ -1,8 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+ /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
-*/
-
+  /* License: none (public domain)*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,6 +26,51 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+ body {
+      animation: colorchange 30s; 
+         
+      -webkit-animation: colorchange 30s; 
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: rgb(224, 192, 192);}
+      25%  {background: rgb(223, 223, 205);}
+      30%  {background: rgb(181, 181, 241);}
+      35%  {background: rgb(149, 223, 149);}
+      24% {background: rgb(223, 195, 195);}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: rgb(235, 203, 203);}
+      25%  {background: rgb(240, 240, 208);}
+      50%  {background: rgb(105, 105, 158);}
+      55%  {background: rgb(192, 235, 192);}
+      60% {background: rgb(207, 189, 189);}
+    }
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 10px;
+}
+
+
+
+header .navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    width: 100%;
+    background-color: #008080;
+}
+
 body {
 	line-height: 1;
 }
@@ -109,12 +152,12 @@ p {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin:  2% 20px;
     justify-content: space-around;
 }
 
